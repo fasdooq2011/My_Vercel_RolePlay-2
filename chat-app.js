@@ -378,6 +378,8 @@ function loadSavedState() {
             elements.topPValue.textContent = state.topP;
             elements.topKValue.textContent = state.topK;
 
+            updateProviderUI();
+
             // Restore messages
             if (state.messages.length > 0) {
                 elements.chatContainer.innerHTML = '';
